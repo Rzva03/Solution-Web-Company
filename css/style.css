@@ -12,10 +12,6 @@ body {
   color: #fff;
 }
 
-p {
-  margin: 10px 0;
-}
-
 i {
   display: inline;
 }
@@ -35,33 +31,29 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+
   padding: 2rem;
 }
 
-section > * {
-  margin: 0 auto;
-  max-width: 100vmax;
-}
-#hero-image {
+.hero-image {
   min-height: 100vh;
   background-image: var(--image);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: left;
   background-size: cover;
   background-attachment: fixed;
 }
 /* Section colors */
-#home {
+.home {
   background: black;
 }
-#about {
+.about {
   background: red;
 }
-#contact {
+.contact {
   background: orangered;
 }
-#services {
+.services {
   background: blueviolet;
 }
 
@@ -128,7 +120,7 @@ section > * {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
-  #hero-image {
+  .hero-image {
     position: absolute;
     visibility: hidden;
   }
@@ -188,5 +180,42 @@ section > * {
   .navbar .logo img {
     width: 8vw;
     padding-bottom: 1vh;
+  }
+  h3 {
+    line-height: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 15vh;
+  }
+  h4 {
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
+  }
+  .ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-values__values ul:not(.browser-default) > li {
+    list-style-type: circle;
+  }
+  .icons-container span {
+    font-size: 10rem;
+  }
+  .icons-container {
+    padding-left: 2rem;
+    background-color: black;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .icons-container:hover {
+    outline: 0.5rem solid red;
+  }
+  .services-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }

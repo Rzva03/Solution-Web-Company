@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +55,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body id="home">
+  <body>
     <!-- --------------------------------------
     -------- Header------------
     --------------------------------------- -->
@@ -43,15 +68,17 @@
         </h1>
         <div>
           <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#home" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#about" class="nav-link">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contacto</a>
             </li>
           </ul>
           <div class="hamburger">
@@ -66,27 +93,83 @@
     -------- Main------------
     --------------------------------------- -->
     <section class="hero-image" id="hero-image"></section>
-    <section id="home">
-      <h3>Home <i class="fas fa-home"></i></h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
-        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
-        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
-        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
-        soluta enim, quisquam molestiae? Inventore, sunt similique.
-      </p>
+    <section id="home" class="home">
+      <h3>Inicio <i class="fas fa-home"></i></h3>
+      <div class="home-mision">
+        <h4>Misión</h4>
+        <p>
+          Somos una empresa de desarrollo comprometida con la creacion de
+          soluciones que unen el diseño, la tecnología y la información, para
+          que la excelencia de nuestra empresa se vea reflejada con nuestros
+          clientes.
+        </p>
+      </div>
+      <div class="home-vision">
+        <h4>Visión</h4>
+        <p>
+          La empresa Solution Web Company tiene como fin crear soluciones web de
+          acuerdo a las neceisades del cliente, y con ello ser en un futuro
+          cercano una de las principales empresas de desarrollo, implementando
+          los nuevos estándares y tecnologías.
+        </p>
+      </div>
+      <div class="home-values">
+        <h4>Valores</h4>
+        <div class="home-values__values">
+          <ul>
+            <li>Compromiso</li>
+            <li>Seriedad</li>
+            <li>Creatividad</li>
+            <li>Cercanía</li>
+            <li>Honestidad</li>
+
+            <li>Disciplina</li>
+            <li>Perseverancia</li>
+            <li>Responsabilidad</li>
+            <li>Sastifacción con el cliente</li>
+            <li>Calidad</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section id="about">
-      <h3>About <i class="fas fa-user"></i></h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
-        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
-        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
-        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
-        soluta enim, quisquam molestiae? Inventore, sunt similique.
-      </p>
+    <section id="about" class="about">
+      <h3>Nosotros <i class="fas fa-user"></i></h3>
     </section>
-    <section id="contact">
+    <section id="services" class="services">
+      <h3>Servicios <i class="fas fa-cog"></i></h3>
+      <p>Los servicios que cuenta Solution Web Company son los siguientes.</p>
+      <section class="services-icons">
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+        <div class="icons-container">
+          <span class="material-icons-outlined"> web </span>
+          <p>Sitios web</p>
+        </div>
+      </section>
+    </section>
+    <section id="contact" class="contact">
       <h3>Contact <i class="fas fa-phone"></i></h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
@@ -96,15 +179,12 @@
         soluta enim, quisquam molestiae? Inventore, sunt similique.
       </p>
     </section>
-    <section id="services">
-      <h3>Services <i class="fas fa-cog"></i></h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
-        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
-        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
-        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
-        soluta enim, quisquam molestiae? Inventore, sunt similique.
-      </p>
-    </section>
+    <footer>
+      <section class="social" style="color: black">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fas fa-envelope"></i>
+      </section>
+    </footer>
   </body>
 </html>
