@@ -9,7 +9,8 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 i {
@@ -31,8 +32,9 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  padding: 2rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  min-height: 100vh;
 }
 
 .hero-image {
@@ -45,16 +47,16 @@ section {
 }
 /* Section colors */
 .home {
-  background: black;
+  background: #82afde;
 }
 .about {
-  background: red;
+  background: #c8a83e;
 }
 .contact {
-  background: orangered;
+  background: #c5aecc;
 }
 .services {
-  background: blueviolet;
+  background: #b8c4c4;
 }
 
 /* Navbar Styling */
@@ -117,7 +119,14 @@ section {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
-
+.social {
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .hero-image {
@@ -165,6 +174,22 @@ section {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-height: 100vh;
+  }
+  h3 {
+    line-height: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 20vh;
+  }
 }
 @media (min-width: 768px) {
   .navbar .logo img {
@@ -185,7 +210,7 @@ section {
     line-height: 0.5rem;
     font-size: 2.5rem;
     font-weight: bold;
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
   h4 {
     font-size: 2rem;
@@ -204,18 +229,24 @@ section {
   }
   .icons-container {
     padding-left: 2rem;
-    background-color: black;
+    background-color: #d3d3d3;
     padding: 2rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    box-shadow: 2vh 1vw 1vh 0.1vw hsla(240, 1%, 17%, 0.349);
   }
   .icons-container:hover {
-    outline: 0.5rem solid red;
+    outline: 0.5rem solid rgb(146, 143, 143);
   }
   .services-icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+  .icons-container img {
+    background-color: lightgrey;
+    width: 10vw;
+    height: 20vh;
   }
 }
