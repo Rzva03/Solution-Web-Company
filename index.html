@@ -54,6 +54,12 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- --------------------------------------
@@ -62,7 +68,7 @@
     <header class="hero">
       <nav class="navbar">
         <h1 class="logo">
-          <a href="#hero-image"
+          <a href="#home"
             ><img src="img/logo.jpeg" alt="Solution Web Company"
           /></a>
         </h1>
@@ -76,6 +82,9 @@
             </li>
             <li class="nav-item">
               <a href="#services" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Proyectos</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contacto</a>
@@ -92,9 +101,14 @@
     <!-- --------------------------------------
     -------- Main------------
     --------------------------------------- -->
-    <section class="hero-image" id="hero-image"></section>
-    <section id="home" class="home">
-      <h3>Inicio <i class="fas fa-home"></i></h3>
+    <section class="hero-image" id="home">
+      <!-- <h1>Bienvenido a Solution Web Company</h1> -->
+      <div class="bg-5">
+        <h1 class="animated-shadow">Bienvenido a Solution Web Company</h1>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h3>Nosotros <i class="fas fa-user"></i></h3>
       <div class="home-mision">
         <h4>Misión</h4>
         <p>
@@ -122,7 +136,6 @@
             <li>Creatividad</li>
             <li>Cercanía</li>
             <li>Honestidad</li>
-
             <li>Disciplina</li>
             <li>Perseverancia</li>
             <li>Responsabilidad</li>
@@ -131,9 +144,6 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section id="about" class="about">
-      <h3>Nosotros <i class="fas fa-user"></i></h3>
     </section>
     <section id="services" class="services">
       <h3>Servicios <i class="fas fa-cog"></i></h3>
@@ -165,16 +175,52 @@
         </div>
       </section>
     </section>
+    <section id="project" class="project">
+      <h3>Clientes sastifechos <i class="fas fa-user"></i></h3>
+    </section>
     <section id="contact" class="contact">
-      <h3>Contact <i class="fas fa-phone"></i></h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
-        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
-        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
-        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
-        soluta enim, quisquam molestiae? Inventore, sunt similique.
-      </p>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <h3>Contacto <i class="fas fa-phone"></i></h3>
+      <p>Pongase en contacto nosotros</p>
+      <form class="contact-form" action="#contact">
+        <label for="nombre">Nombre Completo</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Nombre"
+          required
+          maxlength="100"
+        />
+        <label for="nombre">Correo Electrónico</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="correo@dominio.com"
+          required
+          maxlength="40"
+        />
+        <label for="nombre">Teléfono</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          placeholder="Teléfono"
+          maxlength="15"
+        />
+        <label for="nombre">Organización o empresa</label>
+        <input
+          type="text"
+          name="organizacion"
+          id="organizacion"
+          placeholder="Organización"
+        />
+        <label for="nombre">Describanos su proyecto o consulta</label>
+        <textarea name="mensaje" id="mensaje">
+¡Quiero una página asombrosa!</textarea
+        >
+        <input type="submit" value="Enviar" />
+      </form>
     </section>
     <footer>
       <section class="social">
