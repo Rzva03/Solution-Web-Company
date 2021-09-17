@@ -104,44 +104,47 @@
     <section class="hero-image" id="home">
       <!-- <h1>Bienvenido a Solution Web Company</h1> -->
       <div class="bg-5">
-        <h1 class="animated-shadow">Bienvenido a Solution Web Company</h1>
+        <h1 class="animated-shadow">Bienvenido a</h1>
+        <h2 class="animated-shadow">Solution Web Company</h2>
       </div>
     </section>
     <section id="about" class="about">
       <h3>Nosotros <i class="fas fa-user"></i></h3>
-      <div class="home-mision">
-        <h4>Misión</h4>
-        <p>
-          Somos una empresa de desarrollo comprometida con la creacion de
-          soluciones que unen el diseño, la tecnología y la información, para
-          que la excelencia de nuestra empresa se vea reflejada con nuestros
-          clientes.
-        </p>
-      </div>
-      <div class="home-vision">
-        <h4>Visión</h4>
-        <p>
-          La empresa Solution Web Company tiene como fin crear soluciones web de
-          acuerdo a las neceisades del cliente, y con ello ser en un futuro
-          cercano una de las principales empresas de desarrollo, implementando
-          los nuevos estándares y tecnologías.
-        </p>
-      </div>
-      <div class="home-values">
-        <h4>Valores</h4>
-        <div class="home-values__values">
-          <ul>
-            <li>Compromiso</li>
-            <li>Seriedad</li>
-            <li>Creatividad</li>
-            <li>Cercanía</li>
-            <li>Honestidad</li>
-            <li>Disciplina</li>
-            <li>Perseverancia</li>
-            <li>Responsabilidad</li>
-            <li>Sastifacción con el cliente</li>
-            <li>Calidad</li>
-          </ul>
+      <div class="about-flex-box">
+        <div class="about-mision">
+          <h4>Misión</h4>
+          <p>
+            Somos una empresa de desarrollo comprometida con la creacion de
+            soluciones que unen el diseño, la tecnología y la información, para
+            que la excelencia de nuestra empresa se vea reflejada con nuestros
+            clientes.
+          </p>
+        </div>
+        <div class="about-vision">
+          <h4>Visión</h4>
+          <p>
+            La empresa Solution Web Company tiene como fin crear soluciones web
+            de acuerdo a las neceisades del cliente, y con ello ser en un futuro
+            cercano una de las principales empresas de desarrollo, implementando
+            los nuevos estándares y tecnologías.
+          </p>
+        </div>
+        <div class="about-values">
+          <h4>Valores</h4>
+          <div class="about-values__values">
+            <ul>
+              <li>Compromiso</li>
+              <li>Seriedad</li>
+              <li>Creatividad</li>
+              <li>Cercanía</li>
+              <li>Honestidad</li>
+              <li>Disciplina</li>
+              <li>Perseverancia</li>
+              <li>Responsabilidad</li>
+              <li>Sastifacción con el cliente</li>
+              <li>Calidad</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -151,27 +154,63 @@
       <section class="services-icons">
         <div class="icons-container">
           <img src="alt-icons/web-mobile.svg" alt="Aplicaciones Móviles Web" />
-          <p>Aplicaciones Móviles Web</p>
+          <div class="description-hover">
+            <h4>Aplicaciones Móviles Web</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
         <div class="icons-container">
           <img src="alt-icons/landing-page.svg" alt="Páginas Web" />
-          <p>Páginas Web</p>
+          <div class="description-hover">
+            <h4>Páginas Web</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
         <div class="icons-container">
           <img src="fa-icons/appweb.svg" alt="Aplicaciones  Web" />
-          <p>Aplicaciones Móviles Web</p>
+          <div class="description-hover">
+            <h4>Aplicaciones Móviles Web</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
         <div class="icons-container">
           <img src="alt-icons/blogs.svg" alt="Blogs" />
-          <p>Blogs</p>
+          <div class="description-hover">
+            <h4>Blogs</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
         <div class="icons-container">
           <img src="alt-icons/consultoria.svg" alt="Consultoria Web" />
-          <p>Consultoria Web</p>
+          <div class="description-hover">
+            <h4>Consultoria Web</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
         <div class="icons-container">
           <img src="fa-icons/seo.svg" alt="SEO" />
-          <p>Optimización de motores de búsqueda</p>
+          <div class="description-hover">
+            <h4>SEO</h4>
+            <p class="description-hover-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              aspernatur.
+            </p>
+          </div>
         </div>
       </section>
     </section>
@@ -181,55 +220,72 @@
     <section id="contact" class="contact">
       <h3>Contacto <i class="fas fa-phone"></i></h3>
       <p>Pongase en contacto nosotros</p>
-      <form class="contact-form" action="#contact">
-        <label for="nombre">Nombre Completo</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="Nombre"
-          required
-          maxlength="100"
-        />
-        <label for="nombre">Correo Electrónico</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="correo@dominio.com"
-          required
-          maxlength="40"
-        />
-        <label for="nombre">Teléfono</label>
-        <input
-          type="tel"
-          name="telefono"
-          id="telefono"
-          placeholder="Teléfono"
-          maxlength="15"
-        />
-        <label for="nombre">Organización o empresa</label>
-        <input
-          type="text"
-          name="organizacion"
-          id="organizacion"
-          placeholder="Organización"
-        />
-        <label for="nombre">Describanos su proyecto o consulta</label>
-        <textarea name="mensaje" id="mensaje">
-¡Quiero una página asombrosa!</textarea
-        >
-        <input type="submit" value="Enviar" />
-      </form>
+      <article class="contact-flexbox">
+        <form class="contact-form" action="#contact">
+          <label for="nombre">Nombre Completo</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            required
+            maxlength="100"
+          />
+          <label for="email">Correo Electrónico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="correo@dominio.com"
+            required
+            maxlength="40"
+          />
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Teléfono"
+            maxlength="15"
+          />
+          <label for="organizacion">Organización o empresa</label>
+          <input
+            type="text"
+            name="organizacion"
+            id="organizacion"
+            placeholder="Organización"
+          />
+          <label for="mensaje">Describanos su proyecto o consulta</label>
+          <textarea name="mensaje" id="mensaje">
+        ¡Quiero una página asombrosa!</textarea
+          >
+          <input type="submit" value="Enviar" />
+        </form>
+        <div class="address">
+          <address>
+            La empresa “Solution Web Company” se ubica en la calle Valerio
+            trujano en el numero exterior 113 del estado de Oaxaca, México. A
+            unos escasos metros del zócalo y frente del templo de la compañía de
+            Jesús. También otra referencia es el Coppel Trujano ubicado en la
+            misma calle.
+          </address>
+          <figure>
+            <img
+              class="address-img"
+              src="img/address.png"
+              alt="Address Solution Web Company"
+            />
+            <figcaption>Mapa de la dirreción.</figcaption>
+          </figure>
+        </div>
+        <div class="social">
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""> <i class="fab fa-twitter-square"></i> </a
+          ><a href="">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </article>
     </section>
-    <footer>
-      <section class="social">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""> <i class="fab fa-twitter-square"></i> </a
-        ><a href="">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </section>
-    </footer>
   </body>
 </html>
