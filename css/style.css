@@ -61,6 +61,7 @@ section {
   margin-top: 10vh;
 }
 .animated-shadow {
+  font-family: "Dosis", sans-serif;
   font-size: 5rem;
   color: #ffffff;
   height: 140px;
@@ -69,17 +70,17 @@ section {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  animation: move linear 2000ms infinite;
+  animation: move linear 8000ms infinite;
   z-index: 2;
-  -webkit-animation: move linear 2000ms infinite;
+  -webkit-animation: move linear 8000ms infinite;
 }
 p.animated-shadow {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   height: auto;
   line-height: 3;
   font-weight: bolder;
-  animation: move linear 2000ms infinite;
-  -webkit-animation: move linear 2000ms infinite;
+  animation: move linear 20000ms infinite;
+  -webkit-animation: move linear 20000ms infinite;
 }
 /*font shadow*/
 @keyframes move {
@@ -487,13 +488,13 @@ h3 i {
     font-weight: bold;
   }
   p.animated-shadow {
-    font-size: 1.2rem;
+    font-size: 2rem;
     height: auto;
     text-align: center;
     line-height: 3;
     font-weight: bolder;
-    animation: move linear 2000ms infinite;
-    -webkit-animation: move linear 2000ms infinite;
+    animation: move alternate 20000ms infinite;
+    -webkit-animation: move alternate 20000ms infinite;
   }
   .navbar .logo img {
     width: 6.5vw;
