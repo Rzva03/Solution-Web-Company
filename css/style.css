@@ -10,10 +10,10 @@ html {
 }
 * {
   font-size: 1rem;
+  font-family: "Dosis", sans-serif;
 }
 /* Main Styling */
 body {
-  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -58,6 +58,7 @@ section {
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8);
+  margin-top: 10vh;
 }
 .animated-shadow {
   font-size: 5rem;
@@ -70,6 +71,15 @@ section {
   width: 100%;
   animation: move linear 2000ms infinite;
   z-index: 2;
+  -webkit-animation: move linear 2000ms infinite;
+}
+p.animated-shadow {
+  font-size: 1.2rem;
+  height: auto;
+  line-height: 3;
+  font-weight: bolder;
+  animation: move linear 2000ms infinite;
+  -webkit-animation: move linear 2000ms infinite;
 }
 /*font shadow*/
 @keyframes move {
@@ -170,6 +180,11 @@ h3 i {
   flex-direction: column;
   width: 100vw;
 }
+.about-img {
+  width: 50%;
+  height: 20vh;
+  margin-top: 5vh;
+}
 .about-mision,
 .about-vision,
 .about-values {
@@ -262,6 +277,8 @@ h3 i {
   width: 100%;
   font-weight: bolder;
 }
+/*project*/
+
 /* Contact form */
 .contact-form {
   width: 80vw;
@@ -355,6 +372,11 @@ h3 i {
   } */
   * {
     font-size: 1.5rem;
+  }
+  .animated-shadow {
+    font-size: 4rem;
+    height: auto;
+    font-weight: bold;
   }
   .navbar .logo img {
     width: 19vw;
@@ -461,6 +483,18 @@ h3 i {
     margin: 0;
     padding: 0;
   }
+  .animated-shadow {
+    font-weight: bold;
+  }
+  p.animated-shadow {
+    font-size: 1.2rem;
+    height: auto;
+    text-align: center;
+    line-height: 3;
+    font-weight: bolder;
+    animation: move linear 2000ms infinite;
+    -webkit-animation: move linear 2000ms infinite;
+  }
   .navbar .logo img {
     width: 6.5vw;
   }
@@ -519,7 +553,7 @@ h3 i {
   .about-vision,
   .about-values {
     width: 25vw;
-    height: 60vh;
+    height: 85vh;
     text-align: center;
     background-color: lemonchiffon;
     margin-top: 4vw;
