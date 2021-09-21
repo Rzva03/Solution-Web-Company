@@ -43,6 +43,37 @@ section {
   padding-bottom: 5vh;
   min-height: 100vh;
 }
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  font-family: Khula;
+  font-size: auto;
+  text-align: center;
+  height: auto;
+  width: 85vw;
+  display: block;
+  position: absolute;
+  color: black;
+  top: 18vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: capitalize;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: auto;
+  left: auto;
+  font-size: 2rem;
+  visibility: hidden;
+}
 /* Hero image */
 .hero-image {
   min-height: 100vh;
@@ -562,17 +593,24 @@ figure {
     margin: 0;
     padding: 0;
   }
-  .animated-shadow {
-    font-weight: bold;
-  }
-  p.animated-shadow {
-    font-size: 2rem;
-    height: auto;
+  .console-container {
+    font-family: Khula;
+    font-size: auto;
     text-align: center;
-    line-height: 3;
-    font-weight: bolder;
-    animation: move alternate 20000ms infinite;
-    -webkit-animation: move alternate 20000ms infinite;
+    height: auto;
+    width: 60vw;
+    display: block;
+    position: absolute;
+    color: black;
+    top: 25vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: capitalize;
+  }
+  .text {
+    font-size: 5rem;
   }
   .navbar .logo img {
     width: 6.5vw;
