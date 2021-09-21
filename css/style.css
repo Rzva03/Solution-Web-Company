@@ -347,7 +347,7 @@ h3 i {
   color: black;
 }
 .contact-form input:last-of-type {
-  background-color: lightslategray;
+  background-color: #99cc9b;
   padding: 2vh;
   border-radius: 20%;
   -webkit-border-radius: 20%;
@@ -359,23 +359,21 @@ h3 i {
 }
 /* Address */
 .address {
-  width: 90%;
+  width: 95%;
 }
 .address figure {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.address-img {
+.address-maps {
   margin-top: 2vh;
   width: 100%;
-  height: 30vh;
-  border-radius: 5vw;
-  -webkit-border-radius: 5vw;
-  -moz-border-radius: 5vw;
-  -ms-border-radius: 5vw;
-  -o-border-radius: 5vw;
+  min-height: 90vh;
   box-shadow: 2vh 1vw 1vh 0.1vw hsla(240, 1%, 17%, 0.349);
+}
+figure {
+  margin-bottom: 10vh;
 }
 /* Social*/
 .social {
@@ -731,7 +729,7 @@ h3 i {
     width: 25%;
   }
   .contact-form input:last-of-type {
-    background-color: lightblue;
+    background-color: #99cc9b;
     width: 6vw;
     text-align: center;
     margin-top: 2vw;
@@ -739,14 +737,10 @@ h3 i {
   .address {
     width: 60%;
   }
-  .address-img {
+  .address-maps {
     margin-top: 2vw;
-    width: 100%;
-    border-radius: 5vw;
-    -webkit-border-radius: 5vw;
-    -moz-border-radius: 5vw;
-    -ms-border-radius: 5vw;
-    -o-border-radius: 5vw;
+    width: 90%;
+    height: 70vh;
     box-shadow: 2vh 1vw 1vh 0.1vw hsla(240, 1%, 17%, 0.349);
   }
   .social {
